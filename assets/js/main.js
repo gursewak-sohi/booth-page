@@ -28,4 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Setup toggle functionality for the specified container
     document.querySelectorAll('.toggle-container-full').forEach(setupToggleForContainerFull);
+
+    const swiper = new Swiper('.swiper', {
+        autoHeight: true,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      });
+      
 });
